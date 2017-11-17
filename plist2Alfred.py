@@ -8,6 +8,7 @@ import zipfile
 
 import click
 
+
 def read_plist(filename):
     with open(filename, 'rb') as plist_file:
         plist_entry = plistlib.load(plist_file)
