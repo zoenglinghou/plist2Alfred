@@ -58,7 +58,7 @@ def main(filename):
         file_list = []
         for entry in alfred_entry:
             file_list.append(save_json(entry))
-        output_filename = filename[:-4] + '.alfredsnippets'
+        output_filename = filename[:-6] + '.alfredsnippets'
         with zipfile.ZipFile(output_filename, 'w', zipfile.ZIP_DEFLATED) as zf:
             for entry in file_list:
                 zf.write(entry)
