@@ -14,3 +14,9 @@ The original Python script comes from [alfred-snippets](https://github.com/AndiH
     chmod +x ./plist2Alfred.py
     ./plist2Alfred.py plistfilename.plist
 ```
+
+## LaTeX Snippets
+
+Use it as normal LaTeX symbols but adding a backslash `\` to complete the shortcut to prevent conflicts.
+
+For example: `\alpha\` expands to `α`
