@@ -26,7 +26,7 @@ def plist_to_alfred(plist_entry):
         temp_dict["snippet"] = entry["phrase"]
         temp_dict["uid"] = gen_uuid()
         temp_dict["name"] = entry["shortcut"][1:]
-        temp_dict["keyword"] = entry["shortcut"] + '\\'
+        temp_dict["keyword"] = entry["shortcut"]
         snippet = {"alfredsnippet": temp_dict}
         alfred_entry.append(snippet)
     return alfred_entry
